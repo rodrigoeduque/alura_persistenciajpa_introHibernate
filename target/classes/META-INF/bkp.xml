@@ -8,18 +8,18 @@
 		transaction-type="RESOURCE_LOCAL">
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
-				value="org.mariadb.jdbc.Driver" />
+				value="org.h2.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mariadb://localhost:3306/treinamento_jpa" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="Ana@270419" />
+				value="jdbc:h2:mem:loja" />
+			<property name="javax.persistence.jdbc.user" value="sa" />
+			<property name="javax.persistence.jdbc.password" value="" />
 
 			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MariaDB103Dialect" />
+				value="org.hibernate.dialect.H2Dialect" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 
-			<property name="hibernate.hbm2ddl.auto" value="create" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
 		</properties>
 	</persistence-unit>
 </persistence>

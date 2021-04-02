@@ -14,6 +14,12 @@ import br.com.rodrigoeduque.loja.util.JpaUtil;
 public class CadastroDeProdutos {
 
 	public static void main(String[] args) {
+		consultas();
+
+
+	}
+
+	private static void consultas() {
 		cadastrarProduto();
 
 		EntityManager em = JpaUtil.getEntityManager();
@@ -72,8 +78,6 @@ public class CadastroDeProdutos {
 
 		produtoPorNome.forEach(p4 -> System.out
 				.println("Preço : R$ " + precoProduto));
-
-
 	}
 
 	private static void cadastrarProduto() {
